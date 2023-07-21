@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alura Geek</title>
+  <link rel="stylesheet" href="../assets/css/reset.css">
+  <link rel="stylesheet" href="../assets/css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/globales.css">
+  <link rel="stylesheet" href="../assets/css/header.css">
+  <link rel="stylesheet" href="../assets/css/banner.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="stylesheet" href="../assets/css/products.css">
+  <link rel="stylesheet" href="../assets/css/productsUser.css">
+  <link rel="stylesheet" href="../assets/css/card.css">
+</head>
+
+<body>
+  <header class="header__container">
+    <div class="header__items">
+      <a class="header__logoHome" href="../index.html">
+        <img src="../assets/images/logo.svg" class="header__logoHome-image" alt="logo">
+      </a>
+      <div class="header__search container">
+        <input class="header__search-input" placeholder="Que desea buscar?" type="text" data-busqueda>
+        <button class="header__search-button"><img src="../assets/images/icono-búsqueda.svg" class="header__search-icon"
+            alt="icono busqueda"></button>
+      </div>
+    </div>
+    <a class="header__login" href="login.html">
+      <button class="header__login-button">Login</button>
+    </a>
+  </header>
+  <main>
+    <!--All Products section -->
+    <section class="products">
+      <div class="product__container">
+        <div class="product__header">
+          <h2 class="product__title">Todos Los Productos</h2>
+        </div>
+        <div class="product__list" data-allProducts>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="contacto__container">
+      <div class="contacto__logo">
+        <a href="#">
+          <img alt="logo" class="contacto__logoFooter" src="../assets/images/logo.svg">
+        </a>
+      </div>
+      <div class="contacto__info">
+        <ul>
+          <li class="contacto__info-li"><a class="contacto__info-text" href="#">Quienes somos</a></li>
+          <li class="contacto__info-li"><a class="contacto__info-text" href="#">Política de privacidad</a>
+          </li>
+          <li class="contacto__info-li"><a class="contacto__info-text" href="#">Programa de fidelidad</a>
+          </li>
+          <li class="contacto__info-li"><a class="contacto__info-text" href="#">Nuestras Tiendas</a></li>
+          <li class="contacto__info-li"><a class="contacto__info-text" href="#">Quiero ser franquiciado</a>
+          </li>
+          <li class="contacto__info-li"><a class="contacto__info-text" href="#">Anúncie aquí</a></li>
+        </ul>
+      </div>
+      <form class="contacto__contactar" id="form__data">
+        <h2 class="contacto__contactar-title">Hable con nosotros</h2>
+        <div class="input-container">
+          <label class="contacto__contactar-nombre contacto__textBox">
+            Nombre
+            <input class="contacto__contactar-nombreInput input" id="contact__nombre" name="nombre"
+              placeholder="Pedro Santana" required type="text" data-tipo="nombre">
+          </label>
+          <span class="input-message-error">Este campo no es valido</span>
+        </div>
+        <div class="input-container">
+          <label class="contacto__mensaje contacto__textBox">
+            Escribe tu mensaje
+            <textarea class="contacto__contactar-nombreInput input" id="contact__mensaje" required
+              data-tipo="mensaje"></textarea>
+          </label>
+          <span class="input-message-error">Este campo no es valido</span>
+        </div>
+        <input class="contacto__button" id="contact__boton" type="submit" value="Enviar mensaje">
+      </form>
+    </section>
+    <div class="info__dev">
+      <p>Desarrollado por Martin Palomino</p>
+      <p>2023</p>
+      <div class="info__dev-links">
+        <a href="https://github.com/MartinChristopherPC?tab=repositories" target="_blank"><img
+            src="../assets/images/github.svg " alt="git"></a>
+        <a href="https://www.linkedin.com/in/martinchris-palomino/" target="_blank"><img
+            src="../assets/images/linkedin.svg" alt="linkedin"></a>
+      </div>
+    </div>
+  </footer>
+  <script src="../controllers/allproducts.js" type="module"></script>
+  <script src="../js/form-validation.js" type="module"></script>
+  <script src="../js/boton-buscador.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+.product__card {
+  display: none;
+  transition: all 300ms;
+}
+
+.product__card-edit {
+  display: none;
+}
+
+@media screen and (min-width: 1120px) {
+  .product__card:nth-child(-n + 4) {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 832px) {
+  .product__card:nth-child(-n + 3) {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 832px) {
+  .product__card:nth-child(-n + 2) {
+    display: block;
+  }
+}

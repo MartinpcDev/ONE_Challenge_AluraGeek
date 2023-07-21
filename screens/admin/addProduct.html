@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alura Geek</title>
+  <link rel="stylesheet" href="../../assets/css/reset.css">
+  <link rel="stylesheet" href="../../assets/css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/globales.css">
+  <link rel="stylesheet" href="../../assets/css/header.css">
+  <link rel="stylesheet" href="../../assets/css/banner.css">
+  <link rel="stylesheet" href="../../assets/css/footer.css">
+  <link rel="stylesheet" href="../../assets/css/products.css">
+  <link rel="stylesheet" href="../../assets/css/card.css">
+  <link rel="stylesheet" href="../../assets/css/formProducto.css">
+</head>
+
+<body>
+  <header class="header__container">
+    <div class="header__items">
+      <a class="header__logoHome" href="adminProducts.html">
+        <img src="/assets/images/logo.svg" class="header__logoHome-image" alt="logo">
+      </a>
+    </div>
+    <a class="header__login" href="adminProducts.html">
+      <button class="header__login-button">Menu Administrador</button>
+    </a>
+  </header>
+  <main>
+    <section class="new__product">
+      <form class="form_container" data-form>
+        <h2 class="new__product-title">Agregar nuevo producto</h2>
+        <div class="input__container">
+          <label for="url">URL
+            <input class=" new__product-input input" data-url placeholder="url imagen" id="url" required type="text"
+              data-tipo="enlace"></label>
+          <span class="input-message-error">Este campo no es valido</span>
+        </div>
+        <div class="input__container">
+          <label for="nombre">Nombre
+            <input class=" new__product-input input" data-nombre placeholder="Nombre del producto" id="nombre" required
+              type="text" data-tipo="nombre"></label>
+          <span class="input-message-error">Este campo no es valido</span>
+        </div>
+        <div class="input__container">
+          <label for="precio">Precio
+            <input class=" new__product-input input" data-precio placeholder="Precio producto" id="precio" required
+              type="text" data-tipo="precio"></label>
+          <span class="input-message-error">Este campo no es valido</span>
+        </div>
+        <div class="input__container">
+          <label for="categoria">Categoria
+            <select class="form-selection input" id="categoria" data-categoria required data-tipo="categoria">
+              <option disabled selected value=""> Selecciona la seccion</option>
+              <option data-starWar value="StarWars">StarWars</option>
+              <option data-consolas value="Consolas">Consolas</option>
+              <option data-diversos value="Diversos">Diversos</option>
+            </select></label>
+          <span class="input-message-error">Este campo no es valido</span>
+        </div>
+        <div class="input__container">
+          <label for="descripcion">Descripcion
+            <textarea class=" new__product-input input form-description" data-descripcion
+              placeholder="Descripcion del producto" id="descripcion" required
+              data-tipo="descripcion"></textarea></label>
+          <span class="input-message-error">Este campo no es valido</span>
+        </div>
+        <button class="new__product-button" data-formBtn>Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <section class="contacto__container">
+      <div class="contacto__logo">
+        <a href="#">
+          <img alt="logo" class="contacto__logoFooter" src="/assets/images/logo.svg">
+        </a>
+      </div>
+      <div class="contacto__info">
+        <ul>
+          <li class="contacto__info-li"><a class="contacto__info-text" href="#">Quienes somos</a></li>
+          <li class="contacto__info-li"><a class="contacto__info-text" href="#">Política de privacidad</a>
+          </li>
+          <li class="contacto__info-li"><a class="contacto__info-text" href="#">Programa de fidelidad</a>
+          </li>
+          <li class="contacto__info-li"><a class="contacto__info-text" href="#">Nuestras Tiendas</a></li>
+          <li class="contacto__info-li"><a class="contacto__info-text" href="#">Quiero ser franquiciado</a>
+          </li>
+          <li class="contacto__info-li"><a class="contacto__info-text" href="#">Anúncie aquí</a></li>
+        </ul>
+      </div>
+      <form class="contacto__contactar" id="form__data">
+        <h2 class="contacto__contactar-title">Hable con nosotros</h2>
+        <div class="input-container">
+          <label class="contacto__contactar-nombre contacto__textBox">
+            Nombre
+            <input class="contacto__contactar-nombreInput input" id="contact__nombre" name="nombre"
+              placeholder="Pedro Santana" required type="text" data-tipo="nombre">
+          </label>
+          <span class="input-message-error">Este campo no es valido</span>
+        </div>
+        <div class="input-container">
+          <label class="contacto__mensaje contacto__textBox">
+            Escribe tu mensaje
+            <textarea class="contacto__contactar-nombreInput input" id="contact__mensaje" required
+              data-tipo="mensaje"></textarea>
+          </label>
+          <span class="input-message-error">Este campo no es valido</span>
+        </div>
+        <input class="contacto__button" id="contact__boton" type="submit" value="Enviar mensaje">
+      </form>
+    </section>
+    <div class="info__dev">
+      <p>Desarrollado por Martin Palomino</p>
+      <p>2023</p>
+      <div class="info__dev-links">
+        <a href="https://github.com/MartinChristopherPC?tab=repositories" target="_blank"><img
+            src="/assets/images/github.svg " alt="git"></a>
+        <a href="https://www.linkedin.com/in/martinchris-palomino/" target="_blank"><img
+            src="/assets/images/linkedin.svg" alt="linkedin"></a>
+      </div>
+    </div>
+  </footer>
+  <script crossorigin="anonymous"
+    integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+    referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+  <script src="../../controllers/addProdcuto-controller.js" type="module"></script>
+  <script src="../../js/form-validation.js" type="module"></script>
+</body>
+
+</html>

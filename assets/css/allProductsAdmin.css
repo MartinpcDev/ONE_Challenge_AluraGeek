@@ -1,0 +1,37 @@
+.product__card-edit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.btnDelete {
+  background-color: transparent;
+  border: none;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.boton__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.agregar-producto {
+  color: var(--color-texto);
+  font-weight: 700;
+  background-color: var(--color-texto-verdeOscuroSecundario);
+  padding: 1rem;
+  border: 0.1rem solid var(--color-texto);
+  border-radius: 0.8rem;
+  transition: all 0.3s;
+}
+
+.agregar-producto:hover {
+  background-color: var(--color-texto);
+  color: var(--color-header);
+  transform: scale(1.05);
+}

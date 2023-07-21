@@ -1,0 +1,84 @@
+.banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner__container {
+  width: auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.banner__container-show {
+  width: 100%;
+  height: 35vh;
+}
+
+.banner__container-img {
+  background: url(../images/banner.png) center / cover no-repeat;
+}
+
+.banner__info {
+  height: calc(100% - 100px);
+  width: 80%;
+  padding: 5rem 5rem 5rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: all 300ms;
+  color: var(--color-texto);
+}
+
+.banner__info-title {
+  font-size: 5.2rem;
+  font-weight: 700;
+}
+
+.banner__info-descripcion {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+}
+
+.banner__button {
+  border: none;
+  outline: none;
+  background-color: var(--color-header);
+  color: var(--color-texto);
+  padding: 1.6rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.banner__button:hover {
+  box-shadow: inset 0 0 30px 8px rgba(22, 26, 45, 0.11), 0 0 5px 1px #000000;
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 740px) {
+  .banner__container-img {
+    background: url(../images/banner.png) center no-repeat;
+  }
+
+  .banner__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    margin-left: 1.6rem;
+    width: 95%;
+    padding: 0;
+    transition: all 300ms;
+  }
+
+  .banner__info-title {
+    font-size: 3.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .banner__info-descripcion {
+    font-size: 1.6rem;
+  }
+}

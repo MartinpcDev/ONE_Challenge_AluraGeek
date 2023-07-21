@@ -1,0 +1,123 @@
+footer {
+  background-color: var(--color-header);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacto__container {
+  background-color: var(--color-texto);
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  border-radius: 1.5rem;
+  padding: 1.6rem 0;
+  gap: 3rem;
+  height: 60vh;
+}
+
+.contacto__info-li {
+  margin-bottom: 1.6rem;
+}
+
+.contacto__info-text {
+  color: var(--color-header);
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.contacto__info-text:hover {
+  opacity: 1;
+  transform: scale(1.01);
+}
+
+.contacto__contactar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contacto__contactar-title {
+  color: var(--color-header);
+}
+
+.contacto__textBox {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 0rem 1rem;
+  margin: 1rem 0 1rem 0;
+  border-radius: 1rem;
+  box-shadow: 1px 3px 3px 0 rgba(22, 26, 45, 0.11);
+}
+
+.contacto__contactar-nombreInput {
+  border: none;
+  background-color: transparent;
+  margin-top: 0.8rem;
+  margin-bottom: 1.6rem;
+  resize: none;
+}
+
+.contacto__contactar-nombreInput:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-message-error {
+  display: none;
+  color: red;
+}
+
+.contacto__button:hover {
+  box-shadow: 0 5px 10px 5px rgba(22, 26, 45, 0.11);
+  color: var(--color-header);
+  background-color: var(--color-texto-verdeOscuroSecundario);
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.contacto__button {
+  padding: 1.6rem;
+  font-weight: 700;
+  color: var(--color-texto);
+  background-color: var(--color-texto-verdeOscuroPrimario);
+  border: none;
+  border-radius: 1.5rem;
+  margin-top: 0.3rem;
+  cursor: pointer;
+}
+
+.input-container-invalid {
+  border: 1px solid red;
+  color: red;
+}
+
+.info__dev {
+  color: var(--color-texto);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 970px) {
+  .contacto__container {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .contacto__contactar {
+    width: 95%;
+  }
+}
