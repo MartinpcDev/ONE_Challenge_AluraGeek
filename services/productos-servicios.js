@@ -100,7 +100,7 @@ const mostrarProducto = (imageUrl, name, price, categoria, description, id) => {
     <div class="imgContainer">
         <img class="product__card--img" src = "${imageUrl}" alt = "imagen_del_producto">
     </div>
-        <div class="product__card--info">
+    <div class="product__card--info">
         <p class="product__card--title">${name}</p>
         <p class="product__card--price">${price}</p>
         <a href="/screens/viewProducts.html?id=${id}"  class="product__card-boton" data-verProducto>Ver producto</a>

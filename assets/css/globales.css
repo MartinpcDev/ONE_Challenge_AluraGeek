@@ -29,6 +29,7 @@ body {
 main {
   background-color: var(--color-fondo);
   color: var(--color-texto);
+  height: auto;
 }
 
 a {

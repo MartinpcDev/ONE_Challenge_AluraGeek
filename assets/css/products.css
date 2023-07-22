@@ -1,6 +1,6 @@
 .products {
   width: 100%;
-  padding: 0 3rem;
+  padding: 1.3rem 3rem;
 }
 
 .product__container {
@@ -48,8 +48,9 @@
 
 .product__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 3.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 1.6rem;
+  margin: 0.2rem auto;
   padding: 5rem;
 }
 
